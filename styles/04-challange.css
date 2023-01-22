@@ -1,0 +1,40 @@
+body {
+  background-color: #faa7c9;
+  font-family: sans-serif;
+  color: white;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.quote {
+  font-family: serif;
+}
+
+div ol {
+  color: black;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-align: left;
+}
+img {
+  width: 10em;
+}
+
+#main {
+  width: 50%;
+  font-size: 180%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.reference {
+  color: black;
+  font-size: 110%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1:hover {
+  color: black;
+}

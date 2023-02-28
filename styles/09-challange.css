@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&family=Roboto+Slab&display=swap");
+html {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  margin: 0 auto;
+  background: #1f1f1f;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header img {
+  background-color: #838383;
+  border-radius: 25px 25px 0 0;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.date {
+  color: #425894;
+  margin-bottom: 0;
+}
+
+body h1 {
+  margin-top: 0;
+}
+
+.main_content {
+  color: #838383;
+  padding: 10px 30px;
+}
+
+footer {
+  font-family: "Prata", serif;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  background-color: #425894;
+  border-radius: 0 0 25px 25px;
+}
+
+footer h3 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+footer p {
+  font-size: 70%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.placeholder {
+  background-color: #838383;
+}

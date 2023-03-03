@@ -160,7 +160,7 @@ h2 {
   margin: 0;
 }
 
-main section {
+.home-grid section {
   text-align: center;
 }
 
@@ -216,6 +216,47 @@ footer .social img {
 }
 
 /* Rivers page */
+.rivers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: left;
+  text-align: justify;
+}
+
+.rivers-grid img {
+  width: 100%;
+}
+
+#idaho-text {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.idaho-rivers img {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.utah-rivers img {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#utah-text {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+#arizona-text {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.arizona-rivers img {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
 
 @media screen and (max-width: 900px) {
   #hero,

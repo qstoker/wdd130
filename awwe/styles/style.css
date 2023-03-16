@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Mynerve&display=swap");
 
 body {
-  background-color: #fcfbfb;
+  background-color: #272727;
   color: #60516b;
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 22px;
@@ -10,28 +10,50 @@ body {
 }
 
 #content {
-  max-width: 1600px;
+  max-width: 1920px;
   margin: 0 auto;
+  background-color: #adadad;
 }
 
 /* Header styles */
 header {
   background-color: #b7c277;
+  text-align: center;
+  font-family: "Mynerve", cursive, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
   display: grid;
-  grid-template-columns: 150px auto;
+  grid-template-columns: 250px auto 900px;
+  grid-template-rows: 120px;
 }
 
-.logo {
-  width: 100px;
-}
-
-#logo_link {
-  padding-top: 5px;
+.logo-shell {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 110px;
+  padding-left: 50px;
   justify-self: center;
   align-self: center;
+  z-index: 1;
 }
 
+#header-logo-link {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 110px;
+  padding-left: 50px;
+  justify-self: center;
+  align-self: center;
+  z-index: 1;
+}
+
+/* .logo {
+  width: 250px;
+} */
+
 nav {
+  grid-column: 3;
+  grid-row: 1;
   display: flex;
   justify-content: space-around;
 }
@@ -40,7 +62,7 @@ nav a {
   text-align: center;
   color: #60516b;
   text-decoration: none;
-  padding: 45px 35px 35px 35px;
+  padding: 40px 20px 10px 20px;
 }
 
 nav a:hover {
@@ -54,11 +76,10 @@ nav a:hover {
 }
 
 #hero-img {
-  max-width: 1600px;
+  max-width: 1920px;
   width: 100%;
   grid-column: 1/5;
   grid-row: 1/3;
-  z-index: -1;
 }
 
 #hero-title {
@@ -72,49 +93,99 @@ nav a:hover {
 }
 
 #hero-title h4 {
-  margin-top: 30px;
-  margin-bottom: 5px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding-top: 20px;
+  width: 800px;
+  background-color: rgb(220, 177, 122, 0.7);
 }
 
 #hero-title h1 {
-  margin: 0;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  width: 800px;
+  background-color: rgb(220, 177, 122, 0.7);
 }
 
 #ribbon-content {
   width: fit-content;
-  align-self: center;
+  align-self: end;
   grid-column: 1/3;
   grid-row: 2;
-  background-color: #272727;
+  background-color: rgb(39, 39, 39, 0.9);
   color: #e2e2e2;
+  font-size: 1.3em;
   padding: 8px 16px;
+  margin-bottom: 100px;
 }
 
 /* Home page styles */
 .home-content {
+  max-width: 1600px;
+  padding: 30px 0 50px;
+  border-left: 5px solid #60516b;
+  border-right: 5px solid #60516b;
+  margin: 0 auto;
+  background-color: #e2e2e2;
+}
+
+.home-content p {
+  margin: 0 30px 30px 30px;
+}
+
+.home-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  text-align: justify;
 }
 
-.home-content p:nth-of-type(1) {
-  grid-column: 1/3;
-  grid-row: 1;
-}
-
-.home-content p:nth-of-type(2) {
+.home-grid p {
   grid-column: 1;
   grid-row: 2;
 }
 
-/* .home-content p:nth-of-type(3) {
-  grid-column: 1;
-  grid-row: 3;
-} */
+#main-img {
+  align-self: center;
+  border: 10px solid #dcb17a;
+}
 
 #main-img {
   grid-column: 2;
   grid-row: 2/3;
   width: 900px;
+}
+
+.link-box-wrapper {
+  display: grid;
+  grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
+}
+
+.link-box {
+  background-color: #dcb17a;
+  text-align: center;
+  margin: 50px;
+}
+
+.link-box p {
+  margin: 30px;
+}
+
+.button-box {
+  text-align: center;
+  margin: 50px;
+}
+
+.button {
+  background-color: #60516b;
+  color: #eadc8c;
+  text-decoration: none;
+  padding: 15px 30px;
+  margin-top: 50px;
+}
+
+.button:hover {
+  background-color: #eadc8c;
+  color: #60516b;
 }
 
 /* Footer styles */
@@ -123,10 +194,19 @@ footer {
   color: #60516b;
   font-size: 1.2em;
   padding: 25px 50px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+#logo-and-copyright {
+  display: flex;
+  align-items: center;
+}
+
+footer .logo {
+  width: 150px;
 }
 
 footer a {
@@ -138,6 +218,6 @@ footer p a:hover {
   color: #fce172;
 }
 
-footer .social img {
+.social img {
   padding-top: 15px;
 }

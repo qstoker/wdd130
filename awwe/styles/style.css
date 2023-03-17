@@ -3,8 +3,8 @@
 body {
   background-color: #3d3d3d;
   color: #60516b;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 22px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 21px;
   margin: 0;
   padding: 0;
 }
@@ -48,10 +48,6 @@ header {
   z-index: 1;
 }
 
-/* .logo {
-  width: 250px;
-} */
-
 nav {
   grid-column: 3;
   grid-row: 1;
@@ -89,7 +85,7 @@ nav a:hover {
   text-align: center;
   font-family: "Mynerve", cursive, sans-serif;
   color: #60516b;
-  text-shadow: 0 0 2px #dcb17a;
+  /* text-shadow: 0 0 2px #dcb17a; */
   font-size: 2em;
 }
 
@@ -123,9 +119,9 @@ nav a:hover {
 /* Home page styles */
 .home-content {
   max-width: 1600px;
-  padding: 30px 0 50px;
-  border-left: 5px solid #60516b;
-  border-right: 5px solid #60516b;
+  padding: 40px 0 50px;
+  border-left: 6px solid #60516b;
+  border-right: 6px solid #60516b;
   margin: 0 auto;
   background-color: #e2e2e2;
   box-shadow: 0 0 30px #202020;
@@ -194,7 +190,6 @@ footer {
   color: #60516b;
   font-size: 1.2em;
   padding: 25px 50px;
-  /* margin-top: 100px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -211,11 +206,12 @@ footer .logo {
 
 footer a {
   color: #60516b;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 footer p a:hover {
   color: #fce172;
+  text-decoration: underline;
 }
 
 .social img {

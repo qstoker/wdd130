@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Mynerve&display=swap");
 
 body {
-  background-color: #272727;
+  background-color: #3d3d3d;
   color: #60516b;
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 22px;
@@ -12,7 +12,8 @@ body {
 #content {
   max-width: 1920px;
   margin: 0 auto;
-  background-color: #adadad;
+  background-color: #585858;
+  box-shadow: 0 0 50px #000000;
 }
 
 /* Header styles */
@@ -116,7 +117,7 @@ nav a:hover {
   color: #e2e2e2;
   font-size: 1.3em;
   padding: 8px 16px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 /* Home page styles */
@@ -127,6 +128,8 @@ nav a:hover {
   border-right: 5px solid #60516b;
   margin: 0 auto;
   background-color: #e2e2e2;
+  box-shadow: 0 0 30px #202020;
+  text-align: justify;
 }
 
 .home-content p {
@@ -135,24 +138,18 @@ nav a:hover {
 
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  text-align: justify;
+  grid-template-columns: 400px 1fr;
 }
 
 .home-grid p {
   grid-column: 1;
-  grid-row: 2;
-}
-
-#main-img {
-  align-self: center;
-  border: 10px solid #dcb17a;
 }
 
 #main-img {
   grid-column: 2;
-  grid-row: 2/3;
-  width: 900px;
+  width: 90%;
+  margin: 0 20px 20px 20px;
+  border: 10px solid #dcb17a;
 }
 
 .link-box-wrapper {
@@ -179,6 +176,9 @@ nav a:hover {
   background-color: #60516b;
   color: #eadc8c;
   text-decoration: none;
+  font-family: "Mynerve", cursive, sans-serif;
+  font-size: 26px;
+  font-weight: 600;
   padding: 15px 30px;
   margin-top: 50px;
 }
@@ -211,7 +211,7 @@ footer .logo {
 
 footer a {
   color: #60516b;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 footer p a:hover {

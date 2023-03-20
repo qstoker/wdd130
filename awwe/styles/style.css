@@ -80,6 +80,7 @@ nav a:hover {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: auto auto;
+  box-shadow: 0 0 30px #202020 inset;
 }
 
 #hero-title {

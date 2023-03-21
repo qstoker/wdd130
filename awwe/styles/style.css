@@ -120,8 +120,8 @@ nav a:hover {
   margin-bottom: 150px;
 }
 
-/* Home page styles */
-.home-content {
+/* Main styles */
+main {
   max-width: 1600px;
   padding: 40px 0 50px;
   border-left: 6px solid #60516b;
@@ -132,34 +132,15 @@ nav a:hover {
   text-align: justify;
 }
 
-.home-content p {
+main p {
   margin: 0 30px 30px 30px;
-}
-
-.home-grid {
-  display: grid;
-  grid-template-columns: 400px 1fr;
-}
-
-.home-grid p {
-  grid-column: 1;
-}
-
-#main-img {
-  grid-column: 2;
-  width: 90%;
-  margin: 0 20px 20px 20px;
-  border: 10px solid #dcb17a;
-}
-
-.link-box-wrapper {
-  display: grid;
-  grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
 }
 
 .link-box {
   background-color: #dcb17a;
   text-align: center;
+  /* max-width: 700px;
+  min-height: 239px; */
   margin: 50px;
 }
 
@@ -221,6 +202,68 @@ footer p a:hover {
 .social img {
   padding-top: 15px;
 }
+
+/* Home page styles */
+.home-grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+
+#main-img {
+  grid-column: 2;
+  width: 90%;
+  margin: 0 20px 20px 20px;
+  border: 10px solid #dcb17a;
+}
+
+.home-link-box-wrapper {
+  display: grid;
+  grid-template-columns: minmax(400px, 800px) minmax(400px, 800px);
+  /* grid-template-columns: repeat(:nth-child(minmax(400px, 800px))); */
+}
+
+/* Habitat page styles */
+#banner-img {
+  text-align: center;
+  background-color: #60516b;
+  padding: 50px;
+  margin-bottom: 30px;
+  line-height: 0;
+}
+
+#banner-img img {
+  border: 5px solid #dcb17a;
+  /* height: 600px; */
+}
+
+.habitat-grid {
+  display: grid;
+  grid-template-columns: 1fr 800px;
+}
+
+#ribbon {
+  grid-area: 1/1;
+  background-color: #b7c277;
+  width: 100%;
+  height: 60%;
+  margin: auto;
+}
+
+#img-on-ribbon {
+  grid-area: 1/1;
+  width: 50%;
+  border: 10px solid #60516b;
+  margin: 0 40px 20px 20px;
+  justify-self: right;
+}
+
+.habitat-link-box-wrapper {
+  display: grid;
+  grid-template-columns: minmax(400px, 800px);
+  justify-content: center;
+}
+
+/* Helping page styles */
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-width: 1366px) {

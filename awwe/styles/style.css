@@ -4,7 +4,7 @@ body {
   background-color: #3d3d3d;
   color: #60516b;
   font-family: "Inter", Helvetica, sans-serif;
-  font-size: 21px;
+  font-size: 24px;
   margin: 0;
   padding: 0;
 }
@@ -206,7 +206,7 @@ footer p a:hover {
 /* Home page styles */
 .home-grid {
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 500px 1fr;
 }
 
 #main-img {
@@ -223,29 +223,30 @@ footer p a:hover {
 }
 
 /* Habitat page styles */
-#banner-img {
+#banner {
   text-align: center;
   background-color: #60516b;
-  padding: 50px;
+  padding: 30px 90px;
   margin-bottom: 30px;
   line-height: 0;
 }
 
-#banner-img img {
+#banner img {
   border: 5px solid #dcb17a;
-  /* height: 600px; */
+  max-width: 1000px;
+  width: 100%;
 }
 
 .habitat-grid {
   display: grid;
-  grid-template-columns: 1fr 800px;
+  grid-template-columns: 2fr 3fr;
 }
 
-#ribbon {
+#habitat-ribbon {
   grid-area: 1/1;
   background-color: #b7c277;
   width: 100%;
-  height: 60%;
+  height: 300px;
   margin: auto;
 }
 
@@ -253,8 +254,9 @@ footer p a:hover {
   grid-area: 1/1;
   width: 50%;
   border: 10px solid #60516b;
-  margin: 0 40px 20px 20px;
+  margin: 20px 40px 20px 20px;
   justify-self: right;
+  margin: auto 40px;
 }
 
 .habitat-link-box-wrapper {

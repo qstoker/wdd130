@@ -266,6 +266,55 @@ footer p a:hover {
 }
 
 /* Helping page styles */
+.content-on-ribbon {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#helping-ribbon {
+  grid-area: 1/1;
+  background-color: #dcb17a;
+  height: 30px;
+  width: auto;
+}
+
+.content-on-ribbon p {
+  grid-area: 1/1;
+  background-color: #60516b;
+  color: #eadc8c;
+  margin: auto;
+  padding: 10px 20px;
+  width: 50%;
+}
+
+li {
+  margin: 0 80px 30px 100px;
+}
+
+.donate-box {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  background-color: #b7c277;
+  margin-bottom: 30px;
+}
+
+#content-and-button {
+  margin: auto;
+}
+
+#content-and-button li {
+  margin-top: 20px;
+  /* text-align: center; */
+}
+
+.donate-box img {
+  grid-column: 2;
+  width: 90%;
+  margin: 20px;
+  border: 5px solid #60516b;
+}
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-width: 1366px) {

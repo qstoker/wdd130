@@ -270,7 +270,7 @@ footer p a:hover {
   display: grid;
   text-align: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 #helping-ribbon {
@@ -289,30 +289,33 @@ footer p a:hover {
   width: 50%;
 }
 
-li {
-  margin: 0 80px 30px 100px;
+ul {
+  margin: 0 80px 50px 80px;
 }
 
 .donate-box {
   display: grid;
-  grid-template-columns: 500px 1fr;
+  grid-template-columns: minmax(400px, 700px) minmax(400px, 900px);
   background-color: #b7c277;
-  margin-bottom: 30px;
+  padding: 20px 0;
+  margin-bottom: 50px;
+  /* border-top: 5px solid #60516b;
+  border-bottom: 5px solid #60516b; */
 }
 
 #content-and-button {
   margin: auto;
 }
 
-#content-and-button li {
+#content-and-button ul {
   margin-top: 20px;
-  /* text-align: center; */
+  margin-right: 50px;
 }
 
 .donate-box img {
   grid-column: 2;
   width: 90%;
-  margin: 20px;
+  margin: auto;
   border: 5px solid #60516b;
 }
 
